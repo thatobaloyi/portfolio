@@ -1,0 +1,278 @@
+body{
+    background-color:rgb(30, 47, 48);
+    margin: 0px;
+    min-width: 600px;
+    min-height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#my_image{
+    border-radius: 5%;
+}
+
+
+
+
+.body{
+    background-color:rgb(30, 47, 48);
+    margin: 60px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name{
+    display: inline-block;
+}
+
+#btn_div_a{
+    display: inline-block;
+}
+h1#name{
+    border-right: 5px solid aqua;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.548);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:typing 1.5s steps(17), cursor 1s infinite alternate;
+}
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#social_icons{
+    display: flex;
+}
+
+#dev{
+    color: aqua; 
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: moving 2s steps(20) infinite;  
+}
+
+@keyframes moving{
+    50%{color:white;}
+}
+
+
+
+#icon{
+    width: 30px;
+    margin: 10px;
+    margin-left: 0px;
+    transition: 0.2s;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li::before{
+    content: "\2023";
+    color: aqua;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+p#skills{
+    margin-left: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+@keyframes typing{
+    from{width:0}
+}
+
+@keyframes cursor{
+    50%{border-color: transparent;}
+}
+
+div#name_div{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0.8;
+    color: aqua;
+    border: 1px solid aqua;
+    background: transparent;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+
+button a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
+h1 span{
+    color:aqua;
+    transition: 0.2s;
+}
+
+#about-description{
+    color: rgba(255, 255, 255, 0.548);
+    text-align: justify;
+    float: left;
+    padding: 20px;
+    padding-left: 0px;
+    width:100%;
+    height: auto;
+
+}
+
+#footer{
+    display: flex;
+    background-color:rgb(27, 40, 41);
+    justify-content: center;
+    height: auto;
+    margin-left: 0px;
+}
+
+#copyright{
+    color:rgba(255, 255, 255, 0.548);
+    font-size: 10px;
+    text-align: center;
+}
+
+div#about-content{
+    display: flex;
+}
+
+p span{
+    color:aqua;
+}
+
+p{
+    font-size: larger;
+}
+
+div#about-ul{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width: 500px;
+    height: auto;
+
+}
+
+#about_me_txt, #experience_txt{
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+}
+
+a{
+    color: aqua;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+nav{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    width: 20%;
+    right: 0%;
+    padding: 0px;
+    bottom: 0%;
+    position: fixed;
+}
+
+
+/*Animations*/
+
+#about_me_txt:hover{
+    cursor: pointer;
+    color:  aqua;
+}
+
+#experience_txt:hover{
+    cursor: pointer;
+    color: aqua;
+}
+
+h1 span:hover{
+    cursor: pointer;
+    text-shadow: 1px 1px 20px aqua;
+    letter-spacing: 2px;
+}
+
+.btn-contact:hover{
+    cursor: pointer;
+    color: white;
+    background: rgba(0, 255, 255, 0.589);
+    border-color: rgba(0, 255, 255, 0.589);
+}
+
+.btn-contact:active{
+    opacity: 1;
+}
+
+#reserved::after{
+    content: "\00A9";
+    display: inline-block;
+    margin-left: 2px;
+    font-weight: bold;
+    
+}
+
+ul li{
+    transition: 0.2s;
+}
+
+ul li:hover{
+    cursor: pointer;
+    color: aqua;
+}
+
+a:active{
+    text-shadow: 1px 1px 20px aqua;
+    color: white;
+}
+
+nav a:hover{
+    letter-spacing: 2px;
+}
+
+#icon:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 50em){
+    .about-image{
+        display: none;
+    }
+    nav #nav_links{
+        display: none;
+    }
+
+    nav{
+        bottom: 1px;
+        align-items: center;
+    }
+}
+
+
